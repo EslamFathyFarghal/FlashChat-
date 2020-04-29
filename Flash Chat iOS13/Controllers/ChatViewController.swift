@@ -59,6 +59,8 @@ class ChatViewController: UIViewController {
                     print("Error while Saveing to fire Store : \(e)")
                 } else {
                     print("Saved Succefully to fire Store")
+                    self.messageTextfield.text = ""
+                    self.messageTextfield.placeholder = "Write a new message.."
                 }
             }
         }
